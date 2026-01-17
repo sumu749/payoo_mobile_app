@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Payoo Mobile App</title>
+        <link rel="stylesheet" href="./output.css" />
+        <!-- font awesome cdn  -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Outfit font cdn -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            .bg-image {
+                width: 350px;
+                height: 130px;
+                background-image: url(./assets/bg.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: top center;
+            }
+        </style>
+    </head>
+    <body
+        class="bg-[#f4f5f7] h-screen flex flex-col justify-center items-center"
+    >
+        <div class="bg-image flex justify-center">
+            <img src="../assets/Group.png" alt="" />
+        </div>
+
+        <form class="w-100 bg-white rounded-2xl p-5">
+            <div>
+                <label class="font-semibold" for="">Mobile Number</label>
+                <br />
+                <input
+                    type="text"
+                    placeholder="Enter Your Number"
+                    id="mobile-number"
+                    class="input bg-[#f4f5f7] mt-3 rounded-3xl w-full"
+                />
+            </div>
+            <div class="mt-5">
+                <label class="font-semibold" for="">4 Digit Pin</label>
+                <br />
+                <input
+                    type="text"
+                    placeholder="Enter Your Pin"
+                    id="pin-number"
+                    class="input bg-[#f4f5f7] mt-3 rounded-3xl w-full"
+                />
+            </div>
+            <button
+                type="button"
+                class="btn bg-[#0874f2] text-white mt-5 w-full rounded-3xl"
+                id="loginBtn"
+            >
+                Log In
+            </button>
+        </form>
+        <!-- js scripts  -->
+        <script src="./scripts.js"></script>
+    </body>
+</html>
